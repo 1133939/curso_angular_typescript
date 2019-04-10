@@ -73,6 +73,15 @@ public ofertas: Array<Oferta>=[
     }).then((ofertas: Array<Oferta>) => {
         console.log("segundo then")
         return ofertas;
+    }).then((ofertas: Array<Oferta>)=>{
+        console.log("terceiro then")
+        return new Promise((resolve2, reject2)=>{
+            setTimeout(()=> resolve2(ofertas), 3000)
+        }).then((ofertas: Array<Oferta>)=> {
+            console.log("quarto then")
+            return ofertas;
+        })
+       
     })   
     }
 }
