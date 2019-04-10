@@ -19,8 +19,11 @@ public ofertas : Array<Oferta>
 
     this.ofertasService.getOfertas2()
     .then(
-      (ofertas: Array<Oferta>) => { this.ofertas = ofertas
+      (ofertas: Array<Oferta>) => { 
+        console.log("funcao resolve() foi resolvida depois de 3 segundos")
+        this.ofertas = ofertas
       })
+      
     .catch((param:any) => {console.log(param)})
   }
 
