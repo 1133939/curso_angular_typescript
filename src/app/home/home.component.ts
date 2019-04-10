@@ -19,9 +19,9 @@ public ofertas : Array<Oferta>
 
     this.ofertasService.getOfertas2()
     .then(
-      (ofertas: Array<Oferta>) => { this.ofertas = ofertas},
-      (param : any) => {console.log(param)}
-      )
+      (ofertas: Array<Oferta>) => { this.ofertas = ofertas
+      })
+    .catch((param:any) => {console.log(param)})
   }
 
 }
