@@ -14,13 +14,9 @@ public ofertas : Array<Oferta>
   constructor(private ofertasService : OfertasService) { }
 
   ngOnInit() {
-    //this.ofertas = this.ofertasService.getOfertas();
-    //console.log(this.ofertas);
-
-    this.ofertasService.getOfertas2()
+    this.ofertasService.getOfertas()
     .then(
       (ofertas: Array<Oferta>) => { 
-        console.log("funcao resolve() foi resolvida depois de 3 segundos")
         this.ofertas = ofertas
       })
       
