@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import 'rxjs'
 import {URL_API} from './app.api'
+import { Observable } from 'rxjs';
+import {map, retry} from 'rxjs/operators'
 @Injectable()
 export class OfertasService{
 	constructor(private http : HttpClient){
@@ -38,6 +40,11 @@ return response.shift()
 			.then((response : any) => {
 				return response[0].descricao
 			})
+		}
+		public pesquisaOfertas(termo: string) : Observable<Array<Oferta>>{
+			return this.http.get<Array<Oferta>>(`${URL_API}/ofertas?descricao_oferta_like=${termo}`)
+			.pipe(retry(10))
+			.pipe(map((resposta:any) => resposta))
 		}
 		
 }
