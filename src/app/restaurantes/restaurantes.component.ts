@@ -9,7 +9,10 @@ import {Oferta} from '../shared/oferta.model'
   providers: [OfertasService]
 })
 export class RestaurantesComponent implements OnInit {
+
 public ofertas : Array<Oferta>
+public dataTest : any = new Date(2017, 8, 30)
+
   constructor(private ofertasService : OfertasService) { }
 
   ngOnInit() {
