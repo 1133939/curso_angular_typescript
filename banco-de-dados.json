@@ -423,6 +423,160 @@
       "complemento": "asdad",
       "formaPagamento": "dinheiro",
       "id": 34
+    },
+    {
+      "endereco": "asdads",
+      "numero": "asdasd",
+      "complemento": "asdasd",
+      "formaPagamento": "dinheiro",
+      "id": 35
+    },
+    {
+      "endereco": "asdasd",
+      "numero": "asd",
+      "complemento": "asdasd",
+      "formaPagamento": "dinheiro",
+      "id": 36
+    },
+    {
+      "endereco": "asdasd",
+      "numero": "asd",
+      "complemento": "asd",
+      "formaPagamento": "debito",
+      "id": 37
+    },
+    {
+      "endereco": "asd",
+      "numero": "asd",
+      "complemento": "asd",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 4,
+          "img": {
+            "url": "/assets/ofertas/4/img1.jpg"
+          },
+          "titulo": "Estância das águas",
+          "descricao_oferta": "Diversão garantida com piscinas, trilhas e muito mais.",
+          "valor": 31.9,
+          "quantidade": 5
+        }
+      ],
+      "id": 38
+    },
+    {
+      "endereco": "asd",
+      "numero": "asd",
+      "complemento": "asdasd",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 2,
+          "img": {
+            "url": "/assets/ofertas/2/img1.jpg"
+          },
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 3
+        }
+      ],
+      "id": 39
+    },
+    {
+      "endereco": "adsas",
+      "numero": "dasdasd",
+      "complemento": "asd",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "titulo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 3
+        }
+      ],
+      "id": 40
+    },
+    {
+      "endereco": "asdasd",
+      "numero": "asd",
+      "complemento": "asd",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 2,
+          "img": {
+            "url": "/assets/ofertas/2/img1.jpg"
+          },
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 41
+    },
+    {
+      "endereco": "asd",
+      "numero": "asd",
+      "complemento": null,
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 2,
+          "img": {
+            "url": "/assets/ofertas/2/img1.jpg"
+          },
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 3
+        }
+      ],
+      "id": 42
+    },
+    {
+      "endereco": "asd",
+      "numero": "asd",
+      "complemento": "asd",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 2,
+          "img": {
+            "url": "/assets/ofertas/2/img1.jpg"
+          },
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 43
+    },
+    {
+      "endereco": "asd",
+      "numero": "asd",
+      "complemento": "asd",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 2,
+          "img": {
+            "url": "/assets/ofertas/2/img1.jpg"
+          },
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 44
     }
   ]
 }

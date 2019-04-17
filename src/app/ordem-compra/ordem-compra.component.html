@@ -4,64 +4,46 @@
     
       <h5>Sua Compra</h5>
       <hr />
-
+    <div *ngFor="let item of itensCarrinho">
       <div class="form-row" style="background: #FAFAFA; padding: 20px; border-bottom: solid 1px #F0F0F0">
         <div class="form-group col-sm-1">
-          <img src="/assets/ofertas/1/img1.jpg" class="img-fluid">
+          <img [src]="item.img.url" class="img-fluid">
         </div>
         <div class="form-group col-sm-6">
-          Super Burger
+          {{item.titulo}}
           <br />
-          Rodízio de Mini-hambúrger com opção de entrada.
+         {{item.descricao_oferta}}
         </div>
        
         <div>
           <div class="row">
             <div class="col">
-              <button type="button" class="btn btn-link">-</button>
-              1
-              <button type="button" class="btn btn-link">+</button>
+              <button type="button" class="btn btn-link" (click)="diminuirQtd(item)">-</button>
+              {{item.quantidade}}
+              <button type="button" class="btn btn-link" (click)="aumentarQtd(item)">+</button>
             </div>
           </div>
         </div>
 
         <div class="form-group col-sm-3 d-flex justify-content-end">
-          29.90
+          {{item.valor * item.quantidade| currency :'BRL' : 'symbol'}}
         </div>
       </div>
-      
-      <div class="form-row" style="background: #FAFAFA; padding: 20px; border-bottom: solid 1px #F0F0F0">
-        <div class="form-group col-sm-1">
-          <img src="/assets/ofertas/4/img1.jpg" class="img-fluid">
-        </div>
-        <div class="form-group col-sm-6">
-          Estância das águas
-          <br />
-          Diversão garantida com piscinas, trilhas e muito mais.
-        </div>
-
-        <div>
-          <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-link">-</button>
-              1
-              <button type="button" class="btn btn-link">+</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group col-sm-3 d-flex justify-content-end">
-          31.90
-        </div>
-      </div>
-      
+    </div>
+      <div *ngIf="itensCarrinho.length > 0;else carrinhoVazio">
       <div class="form-row">
         <div class="form-group col d-flex justify-content-end">
-          <h4>Total do pedido: 61.80</h4>
+          <h4>Valor total da compra {{carrinhoService.totalCarrinho() | currency :'BRL' : 'symbol'}}</h4>
         </div>
       </div>
+    </div>
+
+    <ng-template #carrinhoVazio>
+      <div class="form-group col d-flex justify-content-center">
+      <small class="carrinho-vazio">Seu carrinho está vazio, aproveite nossas ofertas!!!</small>
+      </div>
+    </ng-template>
       <br />
-      {{formulario.valid}}
       <h5>Dados de entrega</h5>
       <hr />
 

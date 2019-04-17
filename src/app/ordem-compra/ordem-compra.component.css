@@ -14,3 +14,11 @@ input.ng-valid.ng-touched{
 select.ng-valid.ng-touched{
     border: 1px solid green;
 }
+.carrinho-vazio{
+    font-family: 'Franklin Gothic Medium';
+    font-size: medium;
+    color: rgb(27, 26, 26);
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(199, 184, 173);
+    
+}
